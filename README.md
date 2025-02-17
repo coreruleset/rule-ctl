@@ -1,5 +1,3 @@
-draft
-
 # OWASP CRS Rule Control Script
 This script aims to help when a bulk change on configuration files is needed. rule_ctl.py can, for example, change the value of an action on all rules, or can add/remove/rename a tag on each rule in a file, or can add/remove a transformation function only in rules that match range 942100-942190, etc...
 
