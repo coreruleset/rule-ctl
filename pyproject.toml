@@ -1,0 +1,39 @@
+[project]
+name = "rule-ctl"
+version = "0.1.0"
+description = "Helper for bulk changes in CRS"
+authors = [
+  {name = "Ervin Hegedus", email = "airween@gmail.com"}
+]
+requires-python = ">=3.9"
+license = "Apache-2.0"
+readme = "README.md"
+Issues = "https://github.com/coreruleset/rule-ctl/issues"
+Homepage = "https://github.com/coreruleset/rule-ctl"
+Repository = "https://github.com/coreruleset/rule-ctl.git"
+
+keywords = ["OWASP", "CRS", "linter"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+# Requirements
+dependencies = [
+    "msc_pyparser >=1.2.1",
+]
+
+[dependency-groups]
+dev = [
+  "pytest >=8.1.1,<9"
+]
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
